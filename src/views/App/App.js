@@ -4,24 +4,15 @@ import CSSModules from 'react-css-modules';
 
 import $http from '../../axios/http';
 //引入
-import { NavBar, Icon, Button } from 'antd-mobile';
+import { NavBar, Icon } from 'antd-mobile';
 class App extends Component {
   render() {
     return (
       <div styleName="App">
         <NavBar
-        mode="dark"
+        mode="light"
         icon={<Icon type="left" />}
         onLeftClick={() => console.log('onLeftClick')}
-        rightContent={[
-          <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
-          <Icon key="1" type="ellipsis" />,
-        ]}
-      >NavBar</NavBar>
-      <Button onClick={(e) => this.getNum(e)} type="warning" inline size="small" style={{ marginRight: '4px' }}>ghost</Button>
-      <NavBar
-        mode="dark"
-        leftContent="Back"
         rightContent={[
           <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
           <Icon key="1" type="ellipsis" />,
