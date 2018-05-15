@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './App.css';
 import CSSModules from 'react-css-modules';
 
+import $http from '../../axios/http';
 //引入
 import { NavBar, Icon, Button } from 'antd-mobile';
 class App extends Component {
@@ -32,6 +33,14 @@ class App extends Component {
   getNum(e) {
     let i = 0;
     console.log(i++);
+  }
+  async componentWillMount() {
+    try {
+      let {data} = await $http.get('https://api.myjson.com/bins/lv61i');
+      console.log(data);
+    }catch(e) {
+      console.log(JSON.stringify(e));
+    }
   }
 }
 

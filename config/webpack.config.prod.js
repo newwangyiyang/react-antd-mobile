@@ -59,7 +59,7 @@ module.exports = {
   bail: true,
   // We generate sourcemaps in production. This is slow but gives good results.
   // You can exclude the *.map files from the build during deployment.
-  devtool: shouldUseSourceMap ? 'source-map' : false,
+  // devtool: shouldUseSourceMap ? 'source-map' : false,
   // In production, we only want to load the polyfills and the app code.
   entry: [require.resolve('./polyfills'), paths.appIndexJs],
   output: {
@@ -293,7 +293,7 @@ module.exports = {
                             viewportHeight: 1334, // (Number) The height of the viewport. 
                             unitPrecision: 3, // (Number) The decimal numbers to allow the REM units to grow to. 
                             viewportUnit: 'vw', // (String) Expected units. 
-                            selectorBlackList: ['.ignore', '.hairlines'], // (Array) The selectors to ignore and leave as px. 
+                            selectorBlackList: ['.ignore', '.hairlines', '.am-'], // (Array) The selectors to ignore and leave as px. 
                             minPixelValue: 1, // (Number) Set the minimum pixel value to replace. 
                             mediaQuery: false // (Boolean) Allow px to be converted in media queries. 
                           }),
@@ -331,7 +331,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
+            exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/, /\.less$/],
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
             },
