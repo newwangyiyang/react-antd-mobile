@@ -201,6 +201,7 @@ module.exports = {
                 options: {
                   // theme vars, also can use theme.js instead of this.
                   modifyVars: { "@brand-primary": "#74b9ff" },
+                  javascriptEnabled: true
                 },
               },
             ]
