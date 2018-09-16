@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './App.css';
 import CSSModules from 'react-css-modules';
-
+import {NavLink} from 'react-router-dom';
 import $http from '../../axios/http';
 //引入
 import { NavBar, Icon } from 'antd-mobile';
@@ -18,6 +18,9 @@ class App extends Component {
           <Icon key="1" type="ellipsis" />,
         ]}
       >NavBar</NavBar>
+      <div>
+        <NavLink to="/Home">home</NavLink>
+      </div>
       </div>
     );
   }
