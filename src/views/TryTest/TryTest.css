@@ -1,0 +1,58 @@
+@charset 'utf-8';
+.TryTest {
+  min-height: 100vh;
+}
+.CommentInput {
+  background-color: #fff;
+}
+.CommentInput .comment_input_title {
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  align-items: center;
+}
+.CommentInput .comment_input_title span {
+  font-size: 30px;
+  color: #666;
+}
+.CommentInput .comment_input_title input {
+  width: 60vw;
+  height: 40px;
+}
+.CommentInput .comment_input_content {
+  display: flex;
+  justify-content: space-around;
+}
+.CommentInput .comment_input_content span {
+  font-size: 30px;
+  color: #666;
+}
+.CommentInput .comment_input_content textarea {
+  font-size: 30px;
+  width: 60vw;
+  height: 130px;
+}
+.CommentInput .comment_input_btn {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  align-items: center;
+  padding-right: 50px;
+}
+.CommentInput .comment_input_btn button {
+  width: 80px;
+  background-color: skyblue;
+  color: #fff;
+}
+.CommentItem {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #fff;
+}
+.CommentItem i {
+  color: skyblue;
+  font-size: 30px;
+  margin-right: 20px;
+}
