@@ -6,6 +6,7 @@ import Home from '../views/Home/Home';
 import StudyPage from '../views/StudyPage/StudyPage';
 import ReStudy from '../views/ReStudy/ReStudy';
 import TryTest from '../views/TryTest/TryTest';
+import PercentApp from '../views/PercentApp/PercentApp';
 class RouteConfig extends Component{
     render() {
         return (
@@ -16,6 +17,7 @@ class RouteConfig extends Component{
                     <Route exact path="/StudyPage" component={StudyPage} />
                     <Route exact path="/ReStudy" component={ReStudy} />
                     <Route exact path="/TryTest" component={TryTest} />
+                    <Route exact path="/PercentApp" component={PercentApp} />
                     <Redirect to="/" />
                 </Switch>
             </Router>
