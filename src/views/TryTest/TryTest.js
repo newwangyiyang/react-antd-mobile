@@ -22,7 +22,9 @@ class TryTest extends Component {
     }
     //定义CommentInput点击发布的回调
     submitHandler(obj) {
-        console.log(obj);
+        if(obj.username === '' || obj.content === '') {
+            return false;
+        }
         let list = this.state.list;
         console.log(list);
         list.push(obj);

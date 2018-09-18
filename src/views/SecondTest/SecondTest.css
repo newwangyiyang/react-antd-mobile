@@ -1,0 +1,8 @@
+@charset 'utf-8';
+.SecondTest {
+  min-height: 100vh;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -10,6 +10,8 @@ import PercentApp from '../views/PercentApp/PercentApp';
 import LiveTime from '../views/LiveTime/LiveTime';
 import AutoFocus from '../views/AutoFocus/AutoFocus';
 import PropChildren from '../views/PropChildren/PropChildren';
+import NewStudy from '../views/NewStudy/NewStudy';
+import SecondTest from '../views/SecondTest/SecondTest';
 class RouteConfig extends Component{
     render() {
         return (
@@ -24,6 +26,8 @@ class RouteConfig extends Component{
                     <Route exact path='/LiveTime' component={LiveTime} />
                     <Route exact path='/AutoFocus' component={AutoFocus} />
                     <Route exact path='/PropChildren' component={PropChildren} />
+                    <Route exact path='/NewStudy' component={NewStudy} />
+                    <Route exact path='/SecondTets' component={SecondTest} />
                     <Redirect to="/" />
                 </Switch>
             </Router>
